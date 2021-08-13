@@ -1,5 +1,5 @@
-Otus PHP Basic Lesson 2 form
+Otus PHP Basic Lesson 3 flexboxes
 
 Mockup:
 
-https://www.figma.com/file/C8oW5wTnyYjq6lJcPwiwQD/Sign-in-Page-(Community)?node-id=12%3A127
+https://www.figma.com/file/62l0dJnitnr9wsIIJluznm/Furniture-Shop---Freebie-(Community)?node-id=0%3A1
