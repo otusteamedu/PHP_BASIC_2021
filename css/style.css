@@ -1,0 +1,67 @@
+body {
+    font-family: "BebasNeue", sans-serif;
+    color: #000;
+    margin: 0;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+.container {
+    width: 1237px;
+    background-color: brown;
+    margin: 0 auto;
+
+}
+
+.features-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.features-item {
+    display: flex;
+    width: 255px;
+    background-color: #c9c9c9;
+}
+
+.features-item div {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    margin-right: 26px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .features-item {
+        background-color: red;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .features-item {
+        background-color: green;
+    }
+}
+
+/* наиболее часто используемый экраны: 1920px, 1440px, 1024px, 768px, 425px, 375px, 320px */
+
+.features {
+    margin-bottom: 104px;
+}
+.products_heading {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 120%;
+    /* identical to box height, or 48px */
+    text-align: center;
+    /* Color / Gray 1 */
+    color: #3A3A3A;
+}

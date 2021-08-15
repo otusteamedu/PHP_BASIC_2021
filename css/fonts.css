@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Gilroy"),
+        /* Если не получилось, загрузит woff2 */
+        /* Если браузер не поддерживает woff2, загрузит woff */
+    url("/fonts/Gilroy-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 600;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Gilroy"),
+        /* Если не получилось, загрузит woff2 */
+        /* Если браузер не поддерживает woff2, загрузит woff */
+    url("/fonts/Gilroy-Bold.woff") format("woff");
+}
