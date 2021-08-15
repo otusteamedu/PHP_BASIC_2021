@@ -1,7 +1,7 @@
 body {
     font-family: "Segoe UI", sans-serif;
-    background: green;
-    color: #000;
+    background: linear-gradient(89.46deg, #01BAB3 0.51%, rgba(1, 186, 179, 0.6) 99.58%);
+    opacity: 1;
 }
 
 h2 {
@@ -48,10 +48,71 @@ form {
     margin-bottom: 24px;
 }
 
+.flex-radio {
+    display: flex;
+    justify-content: row;
+    margin-top: 18px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 1009px;
+    width: 1366px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+}
+
+.promosection {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.promoblock {
+    left: 56.15%;
+    right: 14.49%;
+    top: 25.77%;
+    bottom: 34.49%;
+    margin-bottom: 64px;
+}
+
+.promotext {
+    width: 425px;
+    height: 88px;
+    left: 760px;
+    top: 685px;
+}
+
+.cashback {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.85);
+    margin-bottom: 8px;
+}
+
+.promoinfo {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.85);
+}
+
 .flex-item {
     display: flex;
     flex-direction: column;
     margin-bottom: 24px;
+}
+
+.radio-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+    margin-right: 65px;
 }
 
 input[type="text"],
@@ -75,4 +136,8 @@ button {
     color: white;
     font-weight: 600;
     font-size: 18px;
+}
+
+sup {
+    color: #01BAB3
 }

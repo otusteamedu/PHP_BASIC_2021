@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="container">
     <section>
       <div class="form">
         <img alt="ByTrend Logo" src="img/logo-by-trend.svg">
@@ -18,27 +19,32 @@
         <form action="#">
             <div class="flex">
                 <div class="flex-item">
-                    <label for="name">Your name</label>
+                    <label for="name">Your name<sup>*</sup></label>
                     <input id="name" type="text" placeholder="Your name">
                 </div>
 
                 <div class="flex-item">
-                    <label class="label-block" for="surname">Last name</label>
+                    <label class="label-block" for="surname">Last name<sup>*</sup></label>
                     <input id="surname" type="text" placeholder="Last name">
                 </div>
             </div>
 
             <div class="flex-item">
-                <label for="birthdate">Birth date</label>
+                <label for="birthdate">Birth date<sup>*</sup></label>
                 <input id="birthdate" type="date" placeholder="06.12.2000">
             </div>
 
-            <div class="flex">
-                <label for="">Gender</label>
-                <input type="radio">
-                <span>Female</span>
-                <input type="radio">
-                <span>Male</span>
+
+            <label for="gender">Gender<sup>*</sup></label>
+            <div class="flex-radio">
+                <div class="radio-item">
+                    <input id="gender" type="radio">
+                    <span>Female</span>
+                </div>
+                <div class="radio-item">
+                    <input id="gender" type="radio">
+                    <span>Male</span>
+                </div>
             </div>
 
             <div class="flex-item">
@@ -55,5 +61,22 @@
         </form>
       </div>
     </section>
+
+    <section class="promosection">
+        <div class="promoblock">
+            <img alt="hand with phone" src="img/2%201.svg">
+        </div>
+
+        <div class="promotext">
+            <div class="cashback">
+                Cashback
+            </div>
+            <div class="promoinfo">
+                Means monthly interest to the account balance for trading activity according to the terms.
+            </div>
+        </div>
+    </section>
+    </div>
+
 </body>
 </html>
