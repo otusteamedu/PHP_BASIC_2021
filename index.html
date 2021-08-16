@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Домашняя работа 2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+    <section>
+      <div class="form">
+        <img src="img/logo-by-trend.svg" alt="logo">
+        <h2>Welcome to ByTrend!</h2>
+        <span>Already have an account?</span>
+        <a href="#">Log in</a>
+
+        <form action="#">
+            <div class="flex"><!--Дивы First name и Last name выходят за границы всего блока. Не знаю почему.-->
+                <div class="flex-item">
+                    <label for="First name">First name<sup>*</sup></label>
+                    <input id="First name" type="text" placeholder="Your name">
+                </div>
+
+                <div class="flex-item">
+                    <label for="Last name">Last name<sup>*</sup></label>
+                    <input id="Last name" type="text" placeholder="Your surname">
+                </div>
+            </div>
+
+            <div class="flex-item">
+                <label for="birthdate">Birth date<sup>*</sup></label>
+                <input id="birthdate" type="date" placeholder="06.12.2000">
+            </div>
+
+
+            <label for="gender">Gender<sup>*</sup></label>
+            <div class="flex-radio">
+                <div class="radio-item">
+                    <input id="gender" type="radio">
+                    <span>Female</span>
+                </div>
+                <div class="radio-item">
+                    <input id="gender" type="radio">
+                    <span>Male</span>
+                </div>
+            </div>
+
+            <div class="flex-item">
+                <label for="skype">Skype</label>
+                <input id="skype" type="text">
+            </div>
+
+            <div class="flex-item">
+                <label for="promo">Promo</label>
+                <input id="promo" type="text">
+            </div>
+
+            <button type="submit">CONTINUE</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="rightsection">
+        <div class="imgblock">
+            <img alt="hand with phone" src="img/2%201.svg">
+        </div><!--Почему то картинка в фигме, была без фона. (Только рука)-->
+
+        <div class="right-text">
+            <div class="cashback">
+                Cashback
+            </div>
+            <div class="promoinfo">
+                Means monthly interest to the account balance for trading activity according to the terms.
+            </div>
+        </div>
+    </section>
+    </div>
+
+</body>
+</html>
