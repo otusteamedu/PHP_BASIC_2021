@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <div class="form">
+            <img src="img/logo.svg" alt="Логотип">
+            <h2>Welcome to ByTrend!</h2>
+            <span>Already have an account?</span>
+            <a href="#" target="_blank">Log in</a>
+            <form action="#">
+                <div class="flex">
+                    <div class="flex-item">
+                        <label for="name">First name<span class="required">*</span></label>
+                        <input id="name" type="text" placeholder="Your name">
+                    </div>
+
+                    <div class="flex-item">
+                        <label for="lastname">Last name<span class="required">*</span></label>
+                        <input id="lastname" type="text" placeholder="Your surname">
+                    </div>
+                </div>
+
+                <div class="flex-item">
+                    <label for="birthdate">Birth date<span class="required">*</span></label>
+                    <input id="birthdate" type="date">
+                </div>
+
+                <h6>Gender<span class="required">*</span></h6>
+
+                <div class="flex-rad">
+                    <input id="female" class="custom-radio" type="radio" name="gender">
+                    <label for="female">Female</label>
+
+                    <input id="male" class="custom-radio" type="radio" name="gender">
+                    <label for="male">Male</label>
+                </div>
+
+                <div class="flex-item">
+                    <label for="skype">Skype</label>
+                    <input id="skype" type="text">
+                </div>
+
+                <div class="flex-item">
+                    <label for="promo">Promo</label>
+                    <input id="promo" type="text">
+                </div>
+
+                <div class="button">
+                    <button type="submit">Continue<img class="arrow" src="img/arrow.png"></button>
+                </div>
+            </form>
+        </div>
+
+        <div class="application">
+            <img src="img/mobile.png"  alt="Мобильное приложение">
+            <h3>Cashback</h3>
+            <p>Means monthly interest to the account balance for trading activity according to the terms.</p>
+
+        </div>
+    </section>
+</body>
+</html>
