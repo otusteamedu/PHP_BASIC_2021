@@ -1,6 +1,16 @@
-<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="400" height="400" fill="url(#pattern0)"/>
+<svg width="693" height="692" viewBox="0 0 693 692" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g opacity="0.1" filter="url(#filter0_f)">
+<path d="M346.5 542C455.024 542 543 454.248 543 346C543 237.752 455.024 150 346.5 150C237.976 150 150 237.752 150 346C150 454.248 237.976 542 346.5 542Z" fill="#01BAB3"/>
+</g>
+<path d="M346.359 479.258C420.293 479.258 480.229 419.516 480.229 345.82C480.229 272.125 420.293 212.383 346.359 212.383C272.425 212.383 212.489 272.125 212.489 345.82C212.489 419.516 272.425 479.258 346.359 479.258Z" fill="#444150"/>
+<path d="M343 146H343.543L344.645 146.006C453.79 146.896 542 236.095 542 346C542 454.799 455.559 543.308 347.927 545.941C346.586 545.973 345.236 545.993 343.617 546H343V146Z" fill="#01BAB3"/>
+<rect x="142" y="147" width="400" height="400" fill="url(#pattern0)"/>
 <defs>
+<filter id="filter0_f" x="0" y="0" width="693" height="692" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur"/>
+</filter>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0" transform="scale(0.00212766)"/>
 </pattern>

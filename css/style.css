@@ -50,7 +50,7 @@ form {
 
 .flex-radio {
     display: flex;
-    justify-content: row;
+    justify-content: center;
     margin-top: 18px;
 }
 
@@ -67,15 +67,17 @@ form {
 .promosection {
     display: flex;
     flex-direction: column;
-    position: relative;
+    margin-left: 191px;
 }
 
 .promoblock {
-    left: 56.15%;
-    right: 14.49%;
-    top: 25.77%;
-    bottom: 34.49%;
+    height: 400px;
+    width: 400px;
+    left: 767px;
+    top: 261px;
+    border-radius: 0px;
     margin-bottom: 64px;
+    position: relative;
 }
 
 .promotext {
@@ -129,15 +131,31 @@ button {
     display: flex;
     background: #01BAB3;
     border-radius: 6px;
-    padding: 12px 161px;
+    padding: 12px 153px;
     box-sizing: border-box;
     border: 0;
     cursor: pointer;
-    color: white;
-    font-weight: 600;
+    font-style: normal;
+    font-weight: 400;
     font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 sup {
     color: #01BAB3
+}
+
+.image{
+    display: block;
+    margin: auto;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.arrow{
+    margin-left: 16px;
 }
