@@ -205,3 +205,24 @@ for ($i = 0; $i < 10; print $i . PHP_EOL, $i++) {
 
 6. В имеющемся шаблоне сайта заменить статичное меню (ul - li) на генерируемое через PHP. Необходимо представить пункты меню как элементы массива и вывести их циклом. Подумать, как можно реализовать меню с вложенными подменю? Попробовать его реализовать.
 */
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home Work 7 Functions </title>
+    </title>
+</head>
+
+<body>
+    <footer>
+        <div style="text-align:center; font-size:100px; font-weight:bold">
+            <?= Date("Y") ?>
+        </div>
+    </footer>
+</body>
+
+</html>
