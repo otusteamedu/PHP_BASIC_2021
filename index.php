@@ -28,11 +28,10 @@ while ($rangePointer <= $rangeEnd) {
 $rangePointer = 0;
 $rangeEnd = 10;
 
-do {
+print_r($rangePointer . " - это ноль." . PHP_EOL);
 
-    if ($rangePointer == 0) {
-        print_r($rangePointer . " - это ноль." . PHP_EOL);
-    } else if ($rangePointer % 2 == 0) {
+do {
+    if ($rangePointer % 2 == 0) {
         print_r($rangePointer . " - четное число." . PHP_EOL);
     } else {
         print_r($rangePointer . " - нечетное число." . PHP_EOL);
@@ -189,22 +188,133 @@ for ($i = 0; $i < 10; print $i . PHP_EOL, $i++) {
 Написать функцию транслитерации строк.
 */
 
-/* Задача 5
+$testStr = "АбВгДеЖ ЗиКлМн ОпРсТу ФхЦчШщ ЫэЮяЬъ";
+
+function tlStr(string $str = ""): string
+{
+    $translit = [
+        "а" => "a",
+        "б" => "b",
+        "в" => "v",
+        "г" => "g",
+        "д" => "d",
+        "е" => "e",
+        "ё" => "yo",
+        "ж" => "zh",
+        "з" => "z",
+        "и" => "i",
+        "к" => "k",
+        "л" => "l",
+        "м" => "m",
+        "н" => "n",
+        "о" => "o",
+        "п" => "p",
+        "р" => "r",
+        "с" => "s",
+        "т" => "t",
+        "у" => "u",
+        "ф" => "f",
+        "х" => "h",
+        "ц" => "ts",
+        "ч" => "tch",
+        "ш" => "sh",
+        "щ" => "shch",
+        "ы" => "y",
+        "э" => "e",
+        "ю" => "yu",
+        "я" => "ya",
+        "ь" => "",
+        "ъ" => "",
+        " " => " "
+    ];
+
+    $origStr = mb_str_split(mb_strtolower($str), 1);
+    $resStr = "";
+    foreach ($origStr as $value) {
+        $resStr .= $translit[$value];
+    }
+    return $resStr;
+}
+
+var_dump(tlStr($testStr));
+
+/* Задача 5 ГОТОВО
 5. Написать функцию, которая заменяет в строке пробелы на подчеркивания и возвращает видоизмененную строчку.
 */
 
-/* Задача 9
+function underscoreStr(string $str = ""): string
+{
+    return implode("_", explode(" ", $str));
+}
+
+var_dump(underscoreStr($testStr));
+
+/* Задача 9 ГОТОВО
 9* Объединить две ранее написанные функции в одну, которая получает строку на русском языке, производит транслитерацию и замену пробелов на подчеркивания (аналогичная задача решается при конструировании url-адресов на основе названия статьи в блогах).
+
+Решено двумя способами - с помощью 2х функций из задания и с помощью одной функции, где вместо пробела сразу при транслитерации ставится подчеркивание в выходную строку
 */
 
+function getTransliteratedURL(string $str = ""): string
+{
+    return underscoreStr(tlStr($str));
+}
 
+function getTransliteratedURL2(string $str = ""): string
+{
+    $translit = [
+        "а" => "a",
+        "б" => "b",
+        "в" => "v",
+        "г" => "g",
+        "д" => "d",
+        "е" => "e",
+        "ё" => "yo",
+        "ж" => "zh",
+        "з" => "z",
+        "и" => "i",
+        "к" => "k",
+        "л" => "l",
+        "м" => "m",
+        "н" => "n",
+        "о" => "o",
+        "п" => "p",
+        "р" => "r",
+        "с" => "s",
+        "т" => "t",
+        "у" => "u",
+        "ф" => "f",
+        "х" => "h",
+        "ц" => "ts",
+        "ч" => "tch",
+        "ш" => "sh",
+        "щ" => "shch",
+        "ы" => "y",
+        "э" => "e",
+        "ю" => "yu",
+        "я" => "ya",
+        "ь" => "",
+        "ъ" => "",
+        " " => "_"
+    ];
 
+    $origStr = mb_str_split(mb_strtolower($str), 1);
+    $resStr = "";
+    foreach ($origStr as $value) {
+        $resStr .= $translit[$value];
+    }
+    return $resStr;
+}
 
+var_dump(getTransliteratedURL($testStr));
+var_dump(getTransliteratedURL2($testStr));
 
-/* Задача 6 Связано с версткой. Не делал
+/* Задача 6 
 
 6. В имеющемся шаблоне сайта заменить статичное меню (ul - li) на генерируемое через PHP. Необходимо представить пункты меню как элементы массива и вывести их циклом. Подумать, как можно реализовать меню с вложенными подменю? Попробовать его реализовать.
 */
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -213,7 +323,7 @@ for ($i = 0; $i < 10; print $i . PHP_EOL, $i++) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Home Work 7 Functions </title>
+    <title> Home Work 8 Arrays </title>
     </title>
 </head>
 
