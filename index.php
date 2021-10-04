@@ -183,7 +183,7 @@ for ($i = 0; $i < 10; print $i . PHP_EOL, $i++) {
 };
 
 
-/* Задача 4
+/* Задача 4 ГОТОВО
 4. бъявить массив, индексами которого являются буквы русского языка, а значениями – соответствующие латинские буквосочетания (‘а’=> ’a’, ‘б’ => ‘b’, ‘в’ => ‘v’, ‘г’ => ‘g’, …, ‘э’ => ‘e’, ‘ю’ => ‘yu’, ‘я’ => ‘ya’).
 Написать функцию транслитерации строк.
 */
@@ -316,6 +316,7 @@ var_dump(getTransliteratedURL2($testStr));
 
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -324,15 +325,43 @@ var_dump(getTransliteratedURL2($testStr));
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Home Work 8 Arrays </title>
-    </title>
+
 </head>
 
 <body>
-    <footer>
-        <div style="text-align:center; font-size:100px; font-weight:bold">
-            <?= Date("Y") ?>
-        </div>
-    </footer>
+
+    <?=
+    $menuItems = [
+        "MenuItem1" => [],
+        "MenuItem2" => [],
+        "MenuItem3" => [
+            "SubMenuItem1",
+            "SubmenuItem2",
+            "SubMenuItem3",
+        ],
+        "MenuItem4" => [],
+        "MenuItem5" => [],
+        "MenuItem6" => [
+            "SubMenuItem4",
+            "SubmenuItem5",
+            "SubMenuItem6",
+        ],
+    ]
+    ?>
+    <p>
+        <?= print("<ul>");
+        foreach ($menuItems as $key => $value) {
+            if (count($value) > 0) {
+                echo "<li>$key</li>";
+                echo "<ul>";
+                foreach ($value as $key => $elem) echo "<li>$elem</li>";
+                echo "</ul>";
+            } else {
+                echo "<li>$key</li>";
+            };
+        };
+        echo "</ul>"; ?>
+    </p>
 </body>
 
 </html>
