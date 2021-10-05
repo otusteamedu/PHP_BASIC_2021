@@ -309,7 +309,7 @@ function getTransliteratedURL2(string $str = ""): string
 var_dump(getTransliteratedURL($testStr));
 var_dump(getTransliteratedURL2($testStr));
 
-/* Задача 6 
+/* Задача 6 ГОТОВО
 
 6. В имеющемся шаблоне сайта заменить статичное меню (ul - li) на генерируемое через PHP. Необходимо представить пункты меню как элементы массива и вывести их циклом. Подумать, как можно реализовать меню с вложенными подменю? Попробовать его реализовать.
 */
@@ -329,8 +329,8 @@ var_dump(getTransliteratedURL2($testStr));
 </head>
 
 <body>
-
     <?=
+    $tmp = null;
     $menuItems = [
         "MenuItem1" => [],
         "MenuItem2" => [],
@@ -346,10 +346,12 @@ var_dump(getTransliteratedURL2($testStr));
             "SubmenuItem5",
             "SubMenuItem6",
         ],
-    ]
+    ];
     ?>
-    <p>
-        <?= print("<ul>");
+    <div>
+        <?=
+        $tmp = null;
+        echo "<ul>";
         foreach ($menuItems as $key => $value) {
             if (count($value) > 0) {
                 echo "<li>$key</li>";
@@ -361,7 +363,7 @@ var_dump(getTransliteratedURL2($testStr));
             };
         };
         echo "</ul>"; ?>
-    </p>
+    </div>
 </body>
 
 </html>
