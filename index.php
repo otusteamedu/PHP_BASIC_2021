@@ -329,8 +329,7 @@ var_dump(getTransliteratedURL2($testStr));
 </head>
 
 <body>
-    <?=
-    $tmp = null;
+    <?php
     $menuItems = [
         "MenuItem1" => [],
         "MenuItem2" => [],
@@ -349,8 +348,7 @@ var_dump(getTransliteratedURL2($testStr));
     ];
     ?>
     <div>
-        <?=
-        $tmp = null;
+        <?php
         echo "<ul>";
         foreach ($menuItems as $key => $value) {
             if (count($value) > 0) {
