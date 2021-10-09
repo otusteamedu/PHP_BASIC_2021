@@ -1,12 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: "Gilroy", sans-serif;
     color: #000;
-    margin: 0;
 }
 
 h1, h2, h3, h4, p {
@@ -17,11 +11,10 @@ h1, h2, h3, h4, p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
     max-width: 1237px;
     min-height: 85px;
-    margin: 104px 100px;
+    margin: 0 auto;
 }
 
 .features-heading {
@@ -55,7 +48,6 @@ img {
     max-width: 40px;
     max-height: 40px;
     margin-right: 24px;
-
     left: 6.02%;
     right: 6.02%;
     top: 0%;
@@ -70,7 +62,7 @@ img {
     flex-wrap: nowrap;
     max-width: 1236px;
     min-height: 1084px;
-    margin: 104px 100px;
+    margin: 0 auto;
 }
 
 .products_heading {
@@ -81,7 +73,7 @@ img {
     line-height: 120%;
     text-align: center;
     color: #3A3A3A;
-    margin-bottom: 32px;
+    margin: 32px;
 }
 
 .frame-flex {
