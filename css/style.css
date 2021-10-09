@@ -1,5 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: "BebasNeue", sans-serif;
+    font-family: "Gilroy", sans-serif;
     color: #000;
     margin: 0;
 }
@@ -8,23 +13,37 @@ h1, h2, h3, h4, p {
     margin: 0;
 }
 
-.container {
-    width: 1237px;
-    background-color: brown;
-    margin: 0 auto;
-
-}
-
 .features-flex {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
+    max-width: 1237px;
+    min-height: 85px;
+    margin: 104px 100px;
+}
+
+.features-heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.features-p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #898989;
 }
 
 .features-item {
     display: flex;
     width: 255px;
-    background-color: #c9c9c9;
+    align-items: center;
+    align-content: center;
 }
 
 .features-item div {
@@ -33,35 +52,63 @@ h1, h2, h3, h4, p {
 }
 
 img {
-    margin-right: 26px;
-}
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 24px;
 
-
-@media screen and (max-width: 768px) {
-    .features-item {
-        background-color: red;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .features-item {
-        background-color: green;
-    }
+    left: 6.02%;
+    right: 6.02%;
+    top: 0%;
+    bottom: 0%;
 }
 
 /* наиболее часто используемый экраны: 1920px, 1440px, 1024px, 768px, 425px, 375px, 320px */
 
-.features {
-    margin-bottom: 104px;
+.products-flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 1236px;
+    min-height: 1084px;
+    margin: 104px 100px;
 }
+
 .products_heading {
-    font-family: Gilroy;
+    align-self: center;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
     line-height: 120%;
-    /* identical to box height, or 48px */
     text-align: center;
-    /* Color / Gray 1 */
     color: #3A3A3A;
+    margin-bottom: 32px;
+}
+
+.frame-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    max-width: 1236px;
+    min-height: 446px;
+    margin-bottom: 32px;
+}
+
+.show-more {
+    min-width: 245px;
+    min-height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #E89F71;
+    box-sizing: border-box;
+    align-self: center;
+}
+
+.show-more p {
+    padding: 12px 82px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #E89F71;
 }
