@@ -54,7 +54,6 @@ img {
     bottom: 0%;
 }
 
-/* наиболее часто используемый экраны: 1920px, 1440px, 1024px, 768px, 425px, 375px, 320px */
 
 .products-flex {
     display: flex;
@@ -143,6 +142,48 @@ img {
     background-position: center;
 }
 
+.discount {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 74.74%;
+    right: 8.42%;
+    top: 5.38%;
+    bottom: 83.86%;
+    background-image: url("../img/Ellipse-maroon.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.new {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 74.74%;
+    right: 8.42%;
+    top: 5.38%;
+    bottom: 83.86%;
+    background-image: url("../img/Ellipse-green.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.info-text {
+    position: absolute;
+    width: 33px;
+    height: 24px;
+    left: 16.74%;
+    right: 8.42%;
+    top: 24.38%;
+    bottom: 83.86%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+
 .product-desc {
     height: 145px;
     width: 285px;
@@ -209,4 +250,74 @@ img {
     font-size: 16px;
     line-height: 150%;
     color: #E89F71;
+}
+
+/* наиболее часто используемый экраны: 1920px, 1440px,
+1024px, 768px, 425px, 375px, 320px */
+
+@media (max-width: 615px) {
+
+    .features-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+
+    .features-item{
+        align-self: center;
+    }
+
+    .products-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+
+    .frame-flex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .product-item {
+        margin-bottom: 20px;
+        align-self: center;
+    }
+}
+
+
+@media (min-width: 615px) and (max-width: 1162px) {
+
+    .features-flex {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 757px;
+    }
+
+    .features-item{
+        align-self: center;
+    }
+
+    .products-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 757px;
+    }
+
+    .frame-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .product-item {
+        margin-bottom: 20px;
+        align-self: center;
+    }
 }
