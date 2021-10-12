@@ -242,7 +242,7 @@ img {
     align-self: center;
 }
 
-.show-more p {
+.show-more button {
     padding: 12px 82px;
     text-align: center;
     font-style: normal;
@@ -250,6 +250,9 @@ img {
     font-size: 16px;
     line-height: 150%;
     color: #E89F71;
+    background: #FFFFFF;
+    border: none;
+    outline: none;
 }
 
 /* наиболее часто используемый экраны: 1920px, 1440px,

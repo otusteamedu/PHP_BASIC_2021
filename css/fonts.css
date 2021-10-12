@@ -6,7 +6,7 @@
     src: local("Gilroy"),
         /* Если не получилось, загрузит woff2 */
         /* Если браузер не поддерживает woff2, загрузит woff */
-    url("/fonts/Gilroy-Regular.woff") format("woff");
+    url("../fonts/Gilroy-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -17,5 +17,5 @@
     src: local("Gilroy"),
         /* Если не получилось, загрузит woff2 */
         /* Если браузер не поддерживает woff2, загрузит woff */
-    url("/fonts/Gilroy-Bold.woff") format("woff");
+    url("../fonts/Gilroy-Bold.woff") format("woff");
 }
