@@ -1,50 +1,9 @@
-body {
-    font-family: "Gilroy", sans-serif;
-    color: #000;
-}
 
 h1, h2, h3, h4, p {
     margin: 0;
 }
 
-.features-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 1237px;
-    min-height: 85px;
-    margin: 0 auto;
-}
-
-.features-heading {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 150%;
-}
-
-.features-p {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    color: #898989;
-}
-
-.features-item {
-    display: flex;
-    width: 255px;
-    align-items: center;
-    align-content: center;
-}
-
-.features-item div {
-    display: flex;
-    flex-direction: column;
-}
-
-img {
+img_preview {
     max-width: 40px;
     max-height: 40px;
     margin-right: 24px;
