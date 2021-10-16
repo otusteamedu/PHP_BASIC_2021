@@ -1,0 +1,326 @@
+body {
+    font-family: "Gilroy", sans-serif;
+    color: #000;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+.features-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1237px;
+    min-height: 85px;
+    margin: 0 auto;
+}
+
+.features-heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.features-p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #898989;
+}
+
+.features-item {
+    display: flex;
+    width: 255px;
+    align-items: center;
+    align-content: center;
+}
+
+.features-item div {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 24px;
+    left: 6.02%;
+    right: 6.02%;
+    top: 0%;
+    bottom: 0%;
+}
+
+
+.products-flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 1236px;
+    min-height: 1084px;
+    margin: 0 auto;
+}
+
+.products_heading {
+    align-self: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    color: #3A3A3A;
+    margin: 32px;
+}
+
+.frame-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1236px;
+    min-height: 446px;
+    margin-bottom: 32px;
+}
+
+.product-item {
+    width: 285px;
+    height: 446px;
+}
+
+.product-image {
+    height: 301px;
+    width: 285px;
+    position: relative;
+}
+
+#pr1 {
+    background-image: url("../img/image1.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+#pr2 {
+    background-image: url("../img/image2.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+#pr3 {
+    background-image: url("../img/image3.svg");
+    background-size: cover;
+    background-position: center;
+}
+#pr4 {
+    background-image: url("../img/image4.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+#pr5 {
+    background-image: url("../img/image5.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+#pr6 {
+    background-image: url("../img/image6.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+#pr7 {
+    background-image: url("../img/image7.svg");
+    background-size: cover;
+    background-position: center;
+}
+#pr8 {
+    background-image: url("../img/image8.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+.discount {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 74.74%;
+    right: 8.42%;
+    top: 5.38%;
+    bottom: 83.86%;
+    background-image: url("../img/Ellipse-maroon.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.new {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 74.74%;
+    right: 8.42%;
+    top: 5.38%;
+    bottom: 83.86%;
+    background-image: url("../img/Ellipse-green.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.info-text {
+    position: absolute;
+    width: 33px;
+    height: 24px;
+    left: 16.74%;
+    right: 8.42%;
+    top: 24.38%;
+    bottom: 83.86%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+
+.product-desc {
+    height: 145px;
+    width: 285px;
+    background: #F4F5F7;
+}
+
+.product-desc h5 {
+    margin: 0;
+    padding-left: 16px;
+    padding-top: 16px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #3A3A3A;
+}
+
+.pr-brief {
+    margin: 0;
+    padding-left: 16px;
+    padding-top: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #898989;
+}
+
+.pr-price {
+    margin: 0;
+    padding-left: 16px;
+    padding-top: 8px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: #3A3A3A;
+}
+
+.product-desc span {
+    margin-left: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration-line: line-through;
+    color: #B0B0B0;
+}
+
+.show-more {
+    min-width: 245px;
+    min-height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #E89F71;
+    box-sizing: border-box;
+    align-self: center;
+}
+
+.show-more button {
+    padding: 12px 82px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #E89F71;
+    background: #FFFFFF;
+    border: none;
+    outline: none;
+}
+
+/* наиболее часто используемый экраны: 1920px, 1440px,
+1024px, 768px, 425px, 375px, 320px */
+
+@media (max-width: 615px) {
+
+    .features-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+
+    .features-item{
+        align-self: center;
+    }
+
+    .products-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+
+    .frame-flex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .product-item {
+        margin-bottom: 20px;
+        align-self: center;
+    }
+}
+
+
+@media (min-width: 615px) and (max-width: 1162px) {
+
+    .features-flex {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 757px;
+    }
+
+    .features-item{
+        align-self: center;
+    }
+
+    .products-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 757px;
+    }
+
+    .frame-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .product-item {
+        margin-bottom: 20px;
+        align-self: center;
+    }
+}
