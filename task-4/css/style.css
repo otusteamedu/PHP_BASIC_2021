@@ -172,3 +172,34 @@ h2 {
     border: 1px solid #E89F71;
     padding: 12px 82px;
 }
+
+@media screen and (min-width:320px) {
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .products_item {
+        width: 285px;
+    }
+    
+    .photo-block {
+        width: 285px;
+        height: 301px;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+}
+
+@media screen and (min-width:1024px) {
+    .products {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width:1440px) {
+
+}
