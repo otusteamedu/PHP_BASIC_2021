@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Regular.eot');
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+        url('Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Gilroy-Regular.woff2') format('woff2'),
+        url('Gilroy-Regular.woff') format('woff'),
+        url('Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Regular.eot');
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+        url('Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Gilroy-Regular.woff2') format('woff2'),
+        url('Gilroy-Regular.woff') format('woff'),
+        url('Gilroy-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Semibold.eot');
+    src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+        url('Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('Gilroy-Semibold.woff2') format('woff2'),
+        url('Gilroy-Semibold.woff') format('woff'),
+        url('Gilroy-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Medium.eot');
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+        url('Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Gilroy-Medium.woff2') format('woff2'),
+        url('Gilroy-Medium.woff') format('woff'),
+        url('Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    color: #3A3A3A;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 120%;
+}
+
+.title {
+    margin-bottom: 32px;
+}
+
+.container {
+    max-width: 1236px;
+}
+
+.our-products {
+    margin-bottom: 44px;
+}
+
+.products_item {
+    box-sizing: content-box;
+    padding: 0;
+    background: #F4F5F7;
+    /* max-width: 285px; */
+    height: 100%;
+}
+
+.products_item a{
+    text-decoration: none;
+}
+
+.photo-block {
+    position: relative;
+    /* max-width: 285px;
+    max-height: 301px; */
+}
+
+.photo-block > .stock {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 24px;
+}
+
+.photo-block > img {
+    width: 100%;
+}
+
+.description-block {
+    padding: 16px;
+}
+
+.product-name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #3A3A3A;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #898989;
+    margin-bottom: 8px;
+}
+
+
+
+.price-block > .price {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: #3A3A3A;
+    margin-right: 16px;
+}
+
+.price-block > .old-price {
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration-line: line-through;
+    color: #B0B0B0;
+}
+
+.stock {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.stock.discount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background: #E97171;
+    border-radius: 50%;
+}
+
+.stock.new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background: #2EC1AC;
+    border-radius: 50%;
+}
+
+.show-more {
+    width: auto;
+    display: inline-block;
+    text-decoration: none;
+    color: #E89F71;
+    background: #FFFFFF;
+    border: 1px solid #E89F71;
+    padding: 12px 82px;
+}
