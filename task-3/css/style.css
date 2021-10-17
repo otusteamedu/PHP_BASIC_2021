@@ -1,0 +1,204 @@
+@font-face {
+    font-family: "Segoe UI";
+    src: url("fonts/Segoe\ UI.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url("fonts/Segoe\ UI\ Bold.ttf") format("ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: "Segoe UI", "Arial", sans-serif;
+    font-style: normal;
+
+    background: linear-gradient(89.46deg, rgba(1, 186, 179, 0.15) 0.51%, rgba(1, 186, 179, 0.09) 99.58%);
+}
+
+aside {
+    text-align: center;
+    padding-top: 150px;
+}
+
+h1 {
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 39px; 
+    margin-bottom: 16px;
+}
+
+h2 {
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px; 
+}
+
+p {
+    color: #444150;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+a {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #01BAB3;
+}
+
+span {
+    color: #444150;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+span.require::after {
+    content: "*";
+    color: #01BAB3;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+input {
+    color: #444150;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+input::placeholder {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+input[type=text]{
+    background: #FBFBFB;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 10px 16px;
+}
+
+input[type=date]{
+    background: #FBFBFB;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 10px 16px;
+}
+
+button[type=submit] {
+    background: #01BAB3;
+    border-radius: 6px;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+button[type=submit]:after{
+    content: "";
+    display: inline-block;
+	width: 20px;
+	height: 11px;
+    margin-left: 18px;
+	background: url(../img/Icon-next.svg) no-repeat;
+}
+
+.question {
+    line-height: 26px;
+    margin-bottom: 56px;
+}
+
+.thesis {
+    line-height: 24px;
+}
+
+.form-label {
+    display: block;
+}
+
+.form-label span {
+    margin-bottom: 8px;
+}
+
+.form-label input {
+    display: block;
+    width: 100%;
+}
+
+.section-registration {
+    background-color: #FFF;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.content {
+    padding: 80px;
+}
+
+.logo {
+    margin-bottom: 24px;
+}
+
+.form > div {
+    margin-bottom: 24px;
+}
+
+.form_radio {
+	margin-bottom: 10px;
+}
+
+.form_radio input[type=radio] {
+	display: none;
+}
+
+.form_radio label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 0;
+	line-height: 18px;
+	user-select: none;
+}
+
+.form_radio label:before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 0;
+	background: url(../img/radio-1.png) 0 0 no-repeat;
+}
+ 
+.form_radio input[type=radio]:checked + label:before {
+	background: url(../img/radio-2.png) 0 0 no-repeat;
+}
+ 
+.form_radio label:hover:before {
+	filter: brightness(120%);
+}
+ 
+.form_radio input[type=radio]:disabled + label:before {
+	filter: grayscale(100%);
+}
+
+ input[type=date]::-webkit-calendar-picker-indicator {
+    background: url(../img/Icon-date.svg) 0 0 no-repeat;
+}
