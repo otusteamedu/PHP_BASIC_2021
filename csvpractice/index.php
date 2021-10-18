@@ -15,7 +15,7 @@ $clientInfo = [
 ];
 
 $pointer = 0;
-$fs = fopen("clients.csv", "r+");
+$fs = fopen("clients.csv", "r");
 while (($clientsList[$pointer] = fgetcsv($fs,0, ";")) !== false) {
     $pointer += 1;
 }
