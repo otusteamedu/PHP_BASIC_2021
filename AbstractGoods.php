@@ -1,28 +1,30 @@
-/* Цель:
-Создать структуру классов ведения товарной номенклатуры.
-
-Есть абстрактный товар.
-
-Есть цифровой товар, штучный физический товар и товар на вес.
-
-У каждого есть метод подсчёта финальной стоимости.
-
-У цифрового товара
-
- - стоимость постоянная и дешевле штучного товара в два раза
- - у штучного товара обычная стоимость
- - у весового – в зависимости от продаваемого количества в килограммах.
-
-У  всех формируется в конечном итоге доход с продаж.
-
-Что можно вынести в абстрактный класс, наследование?
-
-*/
-
-
-<?php
+<?php declare(strict_types=1);
 
 abstract class AbstractGoods
 {
-  
+    protected float $boxPrice;
+
+    public function setBoxPrice(float $boxPrice)
+    {
+        $this->boxPrice = $boxPrice;
+    }
+
+    public function getBoxPrice() : float
+    {
+        return $this->boxPrice;
+    }
+
+    protected int $boxAmount;
+
+    public function setBoxAmount(int $boxAmount)
+    {
+        $this->boxAmount = $boxAmount;
+    }
+
+    public function getBoxAmount() : int
+    {
+        return $this->boxAmount;
+    }
+
+    abstract function salesIncome (float $boxBoxPrice, int $boxAmount) : float;
 }
