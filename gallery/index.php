@@ -10,15 +10,23 @@
 </head>
 <body>
     <?php
-        $images = scandir('./img', SCANDIR_SORT_NONE);
+        $files = scandir('./img', SCANDIR_SORT_NONE);
+        $images = array_filter($files, function ($value) {
+            $validExt = ['jpeg', 'jpg', 'png','tiff', 'bmp'];
+            $fileExt = explode('.',$value);
+            if ($value !== '.' && $value !== '..' && in_array($fileExt[1], $validExt)){
+                return true;
+                } else {
+                return false;
+                }
+        });
     ?>
 
     <section class="gallery-flex">
         <h2 class="gallery_heading">My books gallery</h2>
             <div class="frame-flex">
-                <?php foreach ($images as $key => $filename) {
-                    if ($filename !== '.' && $filename !== '..') {
-                        ?>
+                <?php
+                    foreach ($images as $key => $filename) { ?>
                         <div class="product-item">
                             <div class="product-image">
                                 <a href="<?='./img/'.$filename;?>" target="_blank">
@@ -26,9 +34,8 @@
                                 </a>
                             </div>
                          </div>
-                    <?php }
-                }
-                ?>
+                        <?php
+                    } ?>
             </div>
 
         <div class="upload-more">

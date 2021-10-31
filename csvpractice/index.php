@@ -14,14 +14,17 @@ $clientInfo = [
     "CreatedAt" => ""
 ];
 
-$pointer = 0;
+$inputLine = "";
 $fs = fopen("clients.csv", "r");
-while (($clientsList[$pointer] = fgetcsv($fs,0, ";")) !== false) {
-    $pointer += 1;
-}
+
+do {
+    $inputLine = fgetcsv($fs,0, ";");
+    if ($inputLine === false) break;
+    array_push($clientsList, $inputLine);
+} while (true);
+
 fclose($fs);
 
-array_pop($clientsList);
 array_splice($clientsList,1,1);
 
 foreach ($clientInfo as $key => $value) {
