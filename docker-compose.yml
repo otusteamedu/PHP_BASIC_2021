@@ -1,0 +1,15 @@
+version: '3.5'
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8888:80"
+    volumes:
+      - ./www:/var/www/app
+      - ./nginx_conf/docker.conf:/etc/nginx/conf.d/docker.conf
+    links:
+      - php-fpm
+  php-fpm:
+    image: php:8-fpm
+    volumes:
+      - ./www:/var/www/app
