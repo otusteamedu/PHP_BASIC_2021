@@ -11,5 +11,6 @@ class Router
 {
     public static function run()
     {
+        $path=trim();
     }
 }

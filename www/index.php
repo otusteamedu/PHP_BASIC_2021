@@ -2,6 +2,4 @@
 
 declare(strict_types=1);
 
-use Core;
-
-Router::run();
+Core\Router::run();
