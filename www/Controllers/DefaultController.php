@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Controllers;
+namespace \Plan\Online\Controllers;
 
 class DefaultController
 {

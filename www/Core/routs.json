@@ -1,0 +1,8 @@
+{
+    "dashboard" : ["Dashboard", "index"],
+    "dash" : ["Dashboard", "index"],
+    "project" : ["Project", "index"],
+    "projects" : ["Dashboard", "index"],
+    "task" : ["Task", "index"],
+    "tasks" : ["Task", "index"]
+}

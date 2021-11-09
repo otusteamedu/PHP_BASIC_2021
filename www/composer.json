@@ -3,9 +3,9 @@
     "type": "home work",
     "autoload": {
         "psr-4": {
-            "Plan\\Online\\Core": "Core/",
-            "Plan\\Online\\Controllers": "Controllers/",
-            "Plan\\Online\\Views": "Views/"
+            "Plan\\Online\\Core\\": "Core/",
+            "Plan\\Online\\Controllers\\": "Controllers/",
+            "Plan\\Online\\Views\\": "Views/"
         }
     }
 }

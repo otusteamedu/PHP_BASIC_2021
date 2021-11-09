@@ -2,4 +2,5 @@
 
 declare(strict_types=1);
 
-Core\Router::run();
+// require_once 'vendor/autoload.php';
+\Plan\Online\Core\Router::run();
