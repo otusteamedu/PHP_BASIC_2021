@@ -12,7 +12,7 @@ class Router
 
         $filename = "routs.json";
 
-        if (file_exists($filename)){
+        if (file_exists($filename)) {
             $r = fopen($filename, "r");
         } else {
             echo "File with rout shortcuts not found!";
@@ -21,8 +21,9 @@ class Router
         $routs = json_decode(file_get_contents($filename), true);
         fclose($r);
 
-        $controllerToCall = "Plan\\Online\\Controllers\\Default";
+        $controllerToCall = "Controllers\\Default";
         $actionToCall = "index";
 
+        $path = trim(parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH), "/");
     }
 }
