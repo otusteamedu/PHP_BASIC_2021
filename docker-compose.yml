@@ -5,11 +5,11 @@ services:
     ports:
       - "8888:80"
     volumes:
-      - ./www:/var/www/app
+      - ./planonline:/var/www/app
       - ./nginx_conf:/etc/nginx/conf.d
     links:
       - php-fpm
   php-fpm:
     image: php:8-fpm
     volumes:
-      - ./www:/var/www/app
+      - ./planonline:/var/www/app

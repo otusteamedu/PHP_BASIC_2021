@@ -1,0 +1,21 @@
+{
+    "name": "plan/online",
+    "description": "MVC task",
+    "type": "project",
+    "license": "free",
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "Controllers\\": "Controllers/",
+            "Views\\": "Views/"
+        }
+    },
+    "authors": [
+        {
+            "name": "citikot",
+            "email": "citikot@dr.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

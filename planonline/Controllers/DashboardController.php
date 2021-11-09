@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace \Plan\Online\Controllers;
+namespace Controllers;
 
 class DashboardController
 {
