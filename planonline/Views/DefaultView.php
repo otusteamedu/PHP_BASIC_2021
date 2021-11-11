@@ -1,10 +1,24 @@
-<?php
+<!DOCTYPE html>
+<html>
 
-declare(strict_types=1);
+<head>
+    <title>Default View</title>
+    <style>
+        body {
+            text-align: center;
+        }
 
-namespace Views;
+        h1 {
+            margin-top: 20%;
+        }
+    </style>
+</head>
 
-class DefaultView
-{
-    public static
-}
+<body>
+
+<h1>DEFAULT VIEW</h1>
+<h2>No Controller Temporary</h2>
+
+</body>
+
+</html>

@@ -1,9 +1,24 @@
-<?php
+<!DOCTYPE html>
+<html>
 
-declare(strict_types=1);
+<head>
+    <title>Task View</title>
+    <style>
+        body {
+            text-align: center;
+        }
 
-namespace Views;
+        h1 {
+            margin-top: 20%;
+        }
+    </style>
+</head>
 
-class TaskView
-{
-}
+<body>
+
+<h1>Task VIEW</h1>
+<h2>Temporary Task View</h2>
+
+</body>
+
+</html>

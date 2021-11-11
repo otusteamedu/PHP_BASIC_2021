@@ -1,8 +1,10 @@
 {
-    "dashboard" : ["Dashboard", "index"],
-    "dash" : ["Dashboard", "index"],
-    "project" : ["Project", "index"],
-    "projects" : ["Dashboard", "index"],
+    "dashboard" : ["Dashboard"],
+    "dash" : ["Dashboard"],
+    "project" : ["Projectboard"],
+    "projectboard" : ["Projectboard"],
+    "projects" : ["Projectboard"],
+    "proj" : ["Projectboard"],
     "task" : ["Task", "index"],
     "tasks" : ["Task", "index"]
 }

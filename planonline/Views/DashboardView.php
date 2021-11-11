@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Projectboard View</title>
+    <title>Dashboard View</title>
     <style>
         body {
             text-align: center;
@@ -16,8 +16,8 @@
 
 <body>
 
-<h1>Projectboard VIEW</h1>
-<h2>Temporary Projectboard View</h2>
+<h1>Dashboard VIEW</h1>
+<h2>Temporary Dashboard View</h2>
 
 </body>
 
