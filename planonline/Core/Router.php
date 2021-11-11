@@ -24,6 +24,17 @@ class Router
         $controllerToCall = "Controllers\\Default";
         $actionToCall = "index";
 
+        // считываем URL из строки браузера
+
         $path = trim(parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH), "/");
+
+        var_dump($path);
+        var_dump($controllerToCall);
+
+        if (empty($path)) {
+            $controllerToCall = $controllerToCall . "Controller.php";
+            var_dump($controllerToCall);
+        } else {
+        }
     }
 }

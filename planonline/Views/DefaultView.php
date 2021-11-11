@@ -6,4 +6,5 @@ namespace Views;
 
 class DefaultView
 {
+    public static
 }

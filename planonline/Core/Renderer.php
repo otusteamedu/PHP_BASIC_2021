@@ -6,7 +6,7 @@ namespace Core;
 
 class Renderer
 {
-    public static function render($view)
+    public static function render($view, $data)
     {
     }
 }
