@@ -12,25 +12,34 @@
 
 <body>
     <?php
-    $images = scandir('./img', SCANDIR_SORT_NONE);
+    // проверка файла по расширению, чтобы отображались только картинки
+
+    $files = scandir('./img', SCANDIR_SORT_NONE);
+    $images = array_filter($files, function ($value) {
+        $validExt = ['jpeg', 'jpg', 'png', 'tiff', 'bmp'];
+        $fileExt = explode('.', $value);
+        if ($value !== '.' && $value !== '..' && in_array($fileExt[1], $validExt)) {
+            return true;
+        } else {
+            return false;
+        }
+    });
     ?>
 
     <section class="gallery-flex">
         <h2 class="gallery_heading">My books gallery</h2>
         <div class="frame-flex">
-            <?php foreach ($images as $key => $filename) {
-                if ($filename !== '.' && $filename !== '..') {
-            ?>
-                    <div class="product-item">
-                        <div class="product-image">
-                            <a href="<?= './img/' . $filename; ?>" target="_blank">
-                                <img src="<?= './img/' . $filename; ?>" alt="Book picture" width="120px" height="150px">
-                            </a>
-                        </div>
+            <?php
+            foreach ($images as $key => $filename) { ?>
+                <div class="product-item">
+                    <div class="product-image">
+                        <a href="<?= './img/' . $filename; ?>" target="_blank">
+                            <img src="<?= './img/' . $filename; ?>" alt="Book picture" width="120px" height="150px">
+                        </a>
                     </div>
-            <?php }
-            }
-            ?>
+                </div>
+            <?php
+            } ?>
         </div>
 
         <div class="upload-more">
