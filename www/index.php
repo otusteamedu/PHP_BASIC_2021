@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Work 9 Files</title>
+    <title>Home Work 10 Forms</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -34,9 +34,10 @@
         </div>
 
         <div class="upload-more">
-            <form enctype="multipart/form-data" method="post">
-                <p><input type="file" name="f">
-                    <input type="submit" value="Upload">
+            <form enctype="multipart/form-data" action="getimage.php" method="post">
+                <p>
+                    <input type="file" name="image">
+                    <button type="submit">Загрузить файл</button>
                 </p>
             </form>
         </div>
