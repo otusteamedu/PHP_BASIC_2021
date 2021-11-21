@@ -1,0 +1,176 @@
+@font-face {
+    font-family: "Nunito";
+    src: local('Nunitolight'), local('Nunitolight'), url('fonts/Nunitolight.woff2') format('woff2'), url('fonts/Nunitolight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Nunito";
+    src: local('Nunitobold'), local('Nunitobold'), url('fonts/Nunitobold.woff2') format('woff2'), url('fonts/Nunitobold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+body {
+    font-family: "Nunito", "Arial", sans-serif;
+    font-weight: normal;
+}
+
+header {
+    z-index: 0;
+    position: relative;
+    background: linear-gradient(90deg, #faf1f1 0%, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0.8) 80%, #d0e2fe 100%);
+}
+
+main {
+    background: url('../img/Background_Elements_main.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: #485466;
+}
+
+.nav-link {
+    color: #485466;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+/* .dropdown-toggle::after {
+    content: url("../img/V.svg");
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+} */
+
+.header {
+    padding: 25px 0;
+}
+
+.logo {
+    margin-right: 64px;
+}
+
+.btn {
+    font-weight: bold;
+}
+
+.btn-login {
+    color: #4E92F9;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.btn-signup {
+    position: relative;
+    font-size: 16px;
+    line-height: 22px;
+    background: linear-gradient(45deg, #C381DB 30%, #4E92F9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+}
+
+.btn-signup::after {
+    z-index: -2;
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: white;
+    border-radius: 8px;
+    top: 0;
+    left: 0;
+}
+
+.btn-signup::before {
+    z-index: -3;
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: linear-gradient(112.77deg, #C381DB 0%, #4E92F9 100%);
+    opacity: 0.5;
+    filter: blur(24px);
+    border-radius: 7px;
+    top: 15px;
+    left: 0;
+}
+
+.btn-primary {
+    z-index: 2;
+    background: linear-gradient(112.77deg, #C381DB 0%, #4E92F9);
+    border: none;
+    position: relative;
+}
+
+.btn-primary::before {
+    content: "";
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: linear-gradient(112.77deg, #C381DB 0%, #4E92F9 100%);
+    opacity: 0.5;
+    filter: blur(24px);
+    border-radius: 7px;
+    top: 15px;
+    left: 0;
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    vertical-align: 0.255em;
+    margin-left: 10px;
+    content: url("../img/V.svg");
+    width: 10px;
+    border: 0;
+}
+
+.showcase_text{
+    margin-top: 144px;
+}
+
+.showcase_img {
+    margin-top: 197px;
+}
+
+.title-1 {
+    font-weight: bold;
+    font-size: 51px;
+    line-height: 70px;
+    background: linear-gradient(45deg, #C381DB 30%, #4E92F9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+}
+
+.title-2 {
+    color: #485466;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 140%;
+}   
+
+.navbar-toggler {
+    border: 1px solid #4E92F9;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 960px){
+    .showcase_img {
+        margin-top: 30px;
+    }
+
+    .showcase_text {
+        margin-top: 30px;
+    }
+}
