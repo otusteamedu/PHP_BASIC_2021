@@ -1,0 +1,18 @@
+1. Выберите все книги с автором N (укажите любого автора).
+SELECT * 
+FROM public.books 
+WHERE author = 'new author 6';
+
+2. Найдите все книги, в которых кол-во страниц больше 500.
+SELECT * 
+FROM public.books 
+WHERE page > 500;
+
+3. Вычислите суммарное кол-во страниц во всех книгах.
+SELECT SUM(page)
+FROM public.books;
+
+4. Найдите все книги, в названии которых 3 слова и более.
+SELECT *
+FROM public.books
+WHERE name LIKE '% % %';
