@@ -51,34 +51,39 @@
     </footer>*/
 
     #Задание №4
-
-    function power($val, $pow){
-		if ($val != 0){
-			$result = $val ** $pow;
-			return $result;
-		}
-	}
-	var_dump(power(2,3));
+    // Переделал с помощью рекурсии.
+    function power($val,$pow)
+    {
+        if ($pow != 0)
+        {
+            return $val * power ($val, $pow - 1);
+        }
+            return 1;
+    }
+    var_dump(power(5, 3));
 
     #Задание №5
-    // Не смог решить.
-
-    # Дополнительное задание
-    //Решение с помощью регулярки.
-    function abbr($price) : string {
-        $price = trim($price);
-        if(empty($price)) return '';
-        preg_match_all('/ (.)/', $price, $matches);
-        return !empty($matches) ? $price[0] . implode('', $matches[1]) : $price;
+    
+    $h = date("H");
+    $m = date("i");
+        
+    function itstime ($h, $m){
+    if ($h==1 || $h==21) {
+    $hours = " час";}
+    elseif (($h>=2 && $h<=4) || ($h>=22 && $h<=24)) {
+    $hours = " часа";}
+    else {$hours = " часов";}
+    if (($m<20) || ($m>10))
+    {$minutes = " минут.";}
+    elseif (($m % 10) === 1) {
+    $minutes = " минута.";}
+    elseif ((($m % 10)>=2) && (($m % 10)<=4)) {
+    $minutes = " минуты.";}
+    else {
+    $minutes = " минут.";}
+    echo $h . $hours . " " . $m . $minutes;
     }
+        
+    itstime($h, $m);
 
-    assert(abbr('Акционерный Коммерческий Банк') === 'АКБ');
-    assert(abbr('Внутренний Валовый Продукт') === 'ВВП');
-    assert(abbr('коммерческое предложение') === 'КП');
-    assert(abbr(' База Данных ') === 'БД');
-    assert(abbr('Кастрюля') === 'Кастрюля');
-    assert(abbr(' Программист ') === 'Программист');
-    assert(abbr('') === '');
-    assert(abbr(' ') === '');
-    ?>
 ?>
