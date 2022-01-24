@@ -52,38 +52,42 @@
 
     #Задание №4
     // Переделал с помощью рекурсии.
-    function power($val,$pow)
-    {
-        if ($pow != 0)
-        {
-            return $val * power ($val, $pow - 1);
+    function power($val, $pow) {
+        if ($pow == 0) {
+          return 1;
+        } elseif ($pow < 0) {
+          return power(1/$val, -$pow);
         }
-            return 1;
-    }
-    var_dump(power(5, 3));
+        return $val * power($val, $pow-1);
+      }
+      
+      var_dump(power(10, -1));
 
     #Задание №5
     
-    $h = date("H");
+    $h = date("H") +7;//Скоректировал, под свой часовой пояс.
     $m = date("i");
         
     function itstime ($h, $m){
     if ($h==1 || $h==21) {
-    $hours = " час";}
-    elseif (($h>=2 && $h<=4) || ($h>=22 && $h<=24)) {
-    $hours = " часа";}
-    else {$hours = " часов";}
-    if (($m<20) || ($m>10))
-    {$minutes = " минут.";}
-    elseif (($m % 10) === 1) {
-    $minutes = " минута.";}
-    elseif ((($m % 10)>=2) && (($m % 10)<=4)) {
-    $minutes = " минуты.";}
-    else {
-    $minutes = " минут.";}
+        $hours = " час";
+    }
+    elseif (($h>=2 && $h<=4) || ($h>=22 && $h<=24)){
+        $hours = " часа";
+    }  else {
+        $hours = " часов";
+    }
+    
+    if (($m % 10) === 1){
+    $minutes = " минута.";
+    }   elseif ((($m % 10)>=2) && (($m % 10)<=4)){
+    $minutes = " минуты.";
+    }   else {
+    $minutes = " минут.";
+    }
     echo $h . $hours . " " . $m . $minutes;
     }
         
-    itstime($h, $m);
+    itstime($h, 31);
 
 ?>
