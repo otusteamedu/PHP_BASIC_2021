@@ -1,5 +1,6 @@
 <?php
 
-function some_function($name) {
+function some_function($name) 
+{
     echo 123;
 }
